@@ -1,0 +1,39 @@
+.header {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  color: #141414;
+  text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+  display: block; /*para pegar os valores de padding*/
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 5px;
+  }
+}
